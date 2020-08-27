@@ -15,6 +15,6 @@ public class AboutMe {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
         Date birthday = simpleDateFormat.parse("23.05.2000");
 
-        System.out.println(" My name is " + forname + " " + surname + " and i'm born on the " + (simpleDateFormat.format(birthday)) + " i'm " + age + " years old, my gender is " + gender + " my marrriage status is " + status + " and my average grades is " + averageGrade);
+        System.out.printf(" My name is %s %s and i'm born on the %s, i'm %d years old and my gender is %c,  my marriage status is %b and my average grade is %f ", forname, surname, (simpleDateFormat.format(birthday)), age, gender, status, averageGrade);
     }
 }
